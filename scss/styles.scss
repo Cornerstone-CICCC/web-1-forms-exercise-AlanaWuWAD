@@ -12,3 +12,82 @@ form {
   max-width: 600px;
   margin: 20px auto;
 }
+
+body{
+  fieldset{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 2px solid rgb(214, 211, 211);
+    border-radius: 5px;
+    margin-top: 1rem;
+  }
+  legend{
+    border: 2px solid rgb(214, 211, 211);
+    border-radius: 5px;
+    padding: 0 0.5rem;
+  }
+  form{
+    label{
+      padding: 0.5rem 0;
+    }
+    .personalInfo input{
+      padding: 0.5rem 0;
+      border: 2px solid rgb(214, 211, 211);
+      border-radius: 5px;
+    }
+    .prefer #color{
+      width: 100%;
+      margin: 0.5rem 0;
+    }
+    .prefer #hobby, #range{ 
+      width: 30%;
+      border: 2px solid rgb(214, 211, 211);
+      border-radius: 5px;
+      padding: 0.2rem 0;
+    }
+    .contact #contact{
+      border: 2px solid rgb(214, 211, 211);
+      border-radius: 5px;
+      padding: 0.2rem 0.1rem;
+    }
+    .contact {
+      position: relative;
+      left:0;
+      #checkbox{
+        position: relative;
+        left:0;
+      }
+    }
+    .gender div{
+      padding: 0.2rem 0.1rem;
+    }
+    .moreInfo #bio{
+      border: 2px solid rgb(214, 211, 211);
+      border-radius: 5px;
+      padding: 0.5rem 0;
+    }
+    .doc input{
+      border: 2px solid rgb(214, 211, 211);
+      border-radius: 5px;
+      padding: 0.5rem 0.5rem;
+    }
+    .submit{
+      display: flex;
+      flex-direction: row;
+      gap:0.5rem;
+      
+      legend{
+        margin-bottom: 0.5rem;
+      }
+      button{
+        background-color: blue;
+        color: white;
+        width: 5rem;
+        height: 2rem;
+        border-radius: 5px;
+        border: 0;
+      }
+    }
+  }
+}

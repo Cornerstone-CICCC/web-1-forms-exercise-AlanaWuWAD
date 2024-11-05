@@ -7,8 +7,77 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <form enctype="multipart/form-data" action="index.html" method="get">
-        <!-- FORM FIELDS HERE -->
+    <form enctype="multipart/form-data" action="index.html" method="get" enctype="multipart/form-data">
+       <fieldset class="personalInfo">
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" />
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email"/>  
+        <label for="pw">Password:</label>
+        <input type="password" name="pw" id="pw"/>   
+        <label for="date">Date of Birth:</label>
+        <input type="date" name="date"/>    
+       </fieldset>
+
+       <fieldset class="prefer">
+        <legend>Preferences</legend>
+        <label for="">Favorite Color:</label>
+        <input type="color" name="color" id="color"/>
+        <label for="hobby">Hobby:</label>
+        <input type="text" name="hobby" id="hobby">
+        <label for="">Experience Level:</label>
+        <input type="range" name="level" min="0" max="10" step="1" id="range"/>
+       </fieldset>
+
+       <fieldset class="contact">
+        <legend>Contact Preferences</legend>
+        <label for="">Preferred Contact Method:</label>
+        <select name="contact" id="contact">
+            <option value="email" selected>Email</option>
+            <option value="cellphone" >Cellphone</option>
+            <option value="facebook">Facebook</option>
+        </select>
+        <label for="subscribe">Subscribe to Newsletter:</label>
+        <input type="checkbox" name="sub" id="checkbox" />
+       </fieldset>
+
+       <fieldset class="gender">
+        <legend>Preferences</legend>
+        <label for="gender">Gender:</label>
+        <div>
+            <input type="radio" name="gender"/>
+            <label for="male">Male</label>
+        </div>
+        <div>
+            <input type="radio" name="gender"/>
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <input type="radio" name="gender"/>
+            <label for="other">Other</label>
+        </div>
+        
+        
+       </fieldset>
+
+       <fieldset class="moreInfo">
+        <legend>More Information</legend>
+        <label for="bio">Bio:</label>
+        <textarea name="moreInfo" id="bio" rows="5"></textarea>
+       </fieldset>
+
+       <fieldset class="doc">
+        <legend>Upload Documents</legend>
+        <label for="doc">Resume and other certifications:</label>
+        <input type="file" name="file" accept=".pdf"/>
+       </fieldset>
+
+       <fieldset class="submit">
+        <legend>Submission</legend>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+       </fieldset>
     </form>
 </body>
 </html>

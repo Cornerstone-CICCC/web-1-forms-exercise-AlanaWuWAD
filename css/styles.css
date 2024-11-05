@@ -13,4 +13,78 @@ form {
   margin: 20px auto;
 }
 
+body fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: 2px solid rgb(214, 211, 211);
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+body legend {
+  border: 2px solid rgb(214, 211, 211);
+  border-radius: 5px;
+  padding: 0 0.5rem;
+}
+body form label {
+  padding: 0.5rem 0;
+}
+body form .personalInfo input {
+  padding: 0.5rem 0;
+  border: 2px solid rgb(214, 211, 211);
+  border-radius: 5px;
+}
+body form .prefer #color {
+  width: 100%;
+  margin: 0.5rem 0;
+}
+body form .prefer #hobby, body form #range {
+  width: 30%;
+  border: 2px solid rgb(214, 211, 211);
+  border-radius: 5px;
+  padding: 0.2rem 0;
+}
+body form .contact #contact {
+  border: 2px solid rgb(214, 211, 211);
+  border-radius: 5px;
+  padding: 0.2rem 0.1rem;
+}
+body form .contact {
+  position: relative;
+  left: 0;
+}
+body form .contact #checkbox {
+  position: relative;
+  left: 0;
+}
+body form .gender div {
+  padding: 0.2rem 0.1rem;
+}
+body form .moreInfo #bio {
+  border: 2px solid rgb(214, 211, 211);
+  border-radius: 5px;
+  padding: 0.5rem 0;
+}
+body form .doc input {
+  border: 2px solid rgb(214, 211, 211);
+  border-radius: 5px;
+  padding: 0.5rem 0.5rem;
+}
+body form .submit {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+body form .submit legend {
+  margin-bottom: 0.5rem;
+}
+body form .submit button {
+  background-color: blue;
+  color: white;
+  width: 5rem;
+  height: 2rem;
+  border-radius: 5px;
+  border: 0;
+}
+
 /*# sourceMappingURL=styles.css.map */
