@@ -54,6 +54,8 @@ body form .contact {
   left: 0;
 }
 body form .contact #checkbox {
+  width: 1rem;
+  height: auto;
   position: relative;
   left: 0;
 }
